@@ -73,18 +73,18 @@
     <li>
       <img src="img/Home-slide/img1.jpg" alt="">
       <div class="caption center-algin">
-        <h2 class="yellow-text text-lighten-2">متعة التسوق في الاسرة مول</h2>
-        <h5 class="light yellow-text text-lighten-2 text-lignten-3 hide-on-small-only">
+        <h2 class="yellow-text text-lighten-1 right-align">متعة التسوق في الاسرة مول</h2>
+        <h5 class="light yellow-text text-lighten-1 hide-on-small-only right-align">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis ab, a obcaecati voluptate nihil!
-
         </h5>
+        <a href="#" class="btn btn-large">تسوق الأن</a>
       </div>
     </li>
     <li>
         <img src="img/Home-slide/img2.jpeg" alt="">
         <div class="caption right-align">
-          <h2 class="yellow-text text-lighten-2">أسعارنا منافسة</h2>
-          <h5 class="light yellow-text text-lighten-2 hide-on-small-only">
+          <h2 class="yellow-text text-lighten-1 right-align">أسعارنا منافسة</h2>
+          <h5 class="yellow-text text-lighten-1 right-align hide-on-small-only">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis ab, a obcaecati voluptate nihil!
   
           </h5>
@@ -92,43 +92,63 @@
       </li> <li>
           <img src="img/Home-slide/img3.jpeg" alt="">
           <div class="caption right-align">
-            <h2 class="yellow-text text-lighten-2">خدمات توصيل الى بيتك</h2>
-            <h5 class="light gray-text text-lignten-3 hide-on-small-only">
+            <h2 class="yellow-text text-lighten-1 right-align">خدمات توصيل الى بيتك</h2>
+            <h5 class="yellow-text text-lighten-1 right-align hide-on-small-only">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis ab, a obcaecati voluptate nihil!
     
             </h5>
+            <a href="#" class="btn btn-large">تسوق الأن</a>
           </div>
         </li> <li>
             <img src="img/Home-slide/img4.jpeg" alt="">
             <div class="caption center-algin">
-              <h2>جودة في بضائعنا</h2>
-              <h5 class="light yeloow-text text-lignten-3 hide-on-small-only">
+              <h2 class="yellow-text text-lighten-1 right-align">جودة في بضائعنا</h2>
+              <h5 class="yellow-text text-lighten-1 right-align hide-on-small-only">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis ab, a obcaecati voluptate nihil!
       
               </h5>
+              <a href="#" class="btn btn-large">تسوق الأن</a>
             </div>
           </li> <li>
               <img src="img/Home-slide/img5.jpeg" alt="">
-              <div class="caption center-algin">
-                <h2>مصداقية في التعامل</h2>
-                <h5 class="light gray-text text-lignten-3 hide-on-small-only">
+              <div class="caption right-align">
+                <h2 class="yellow-text text-lighten-1 right-align">مصداقية في التعامل</h2>
+                <h5 class="yellow-text text-lighten-1 right-align hide-on-small-only">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis ab, a obcaecati voluptate nihil!
         
                 </h5>
+                <a href="#" class="btn btn-large">تسوق الأن</a>
               </div>
             </li> <li>
                 <img src="img/Home-slide/img7.jpeg" alt="">
                 <div class="caption center-algin">
-                  <h2>متعة التسوق في الاسرة مول</h2>
-                  <h5 class="light gray-text text-lignten-3 hide-on-small-only">
+                  <h2 class="yellow-text text-lighten-1 right-align">متعة التسوق في الاسرة مول</h2>
+                  <h5 class="yellow-text text-lighten-1 right-align hide-on-small-only">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis ab, a obcaecati voluptate nihil!
           
                   </h5>
+                  <a href="#" class="btn btn-large">تسوق الأن</a>
                 </div>
               </li>
   </ul>
 </section>
 <!-- End Home-Slider Section-->
+
+<!-- Search Section-->
+<section class="section section-search teal darken-1 white-text center">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h3>ابحث عن طلبك</h3>
+        <div class="input-field">
+          <input class="white  grey-text autocomplete right-align" placeholder="طماطم, زيت, مشروب ...الخ" type="text" id="autocomplete-input">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Search Section-->
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -142,7 +162,18 @@
           transition: 500,
           interval: 6000
         })
+         // Autocomlete Search
+      $('.autocomplete').autocomplete({
+        data: {
+          "طماطم بستان" : null,
+          "زيت" : null,
+          "سمن" : null,
+          "تن" : null,
+          "دحي" : null
+        }
       });
+      });
+     
     </script>
   </body>
 </html>
